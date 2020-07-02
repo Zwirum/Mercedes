@@ -1,7 +1,7 @@
 $(function(){
   $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -14,5 +14,8 @@ $(function(){
       $(this).addClass('active');
       $('#'+id).addClass('active-tab').fadeIn();
       return false;
+    });
+    $('.menu__btn').on('click', function(){
+      $('.menu__list').slideToggle();
     });
 });
